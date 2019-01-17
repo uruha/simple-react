@@ -38,7 +38,7 @@ class App extends Component {
     const FailLoad = <li>{error ? error.message : ''}</li>;
     const ItemList = items.map(item => (
       <li key={item.id}>
-        <a href="{item.url}">{item.title}</a>
+        <a href={item.url}>{item.title}</a>
       </li>
     ));
 
